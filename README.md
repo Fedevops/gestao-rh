@@ -25,3 +25,8 @@ Comandos para rodar o projeto:
     python manage.py createsuperuser (user: admin - senha: 1234)
     Para acessar o painel de admin do django:
         http://127.0.0.1:8000/admin
+
+# Integração com bootstrap
+1 - Criar uma pasta "static" na raiz do projeto:
+2 - Baixar o css do bootstrap https://getbootstrap.com/docs/4.1/getting-started/download/  e colar seu conteúdo 
+na parte static/bootstrap
