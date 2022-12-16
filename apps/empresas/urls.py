@@ -1,6 +1,9 @@
 from django.urls import path, include
-from .views import home
+from .views import EmpresaCreate, EmpresaEdit
+
 
 urlpatterns = [
-    path('', home)
+    path('novo', EmpresaCreate.as_view(), name='create_empresa'),
+    path('editar/<int:pk>/',
+        EmpresaEdit.as_view(), name='edit_empresa'),
 ]
